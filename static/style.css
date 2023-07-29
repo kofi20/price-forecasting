@@ -1,0 +1,319 @@
+body{
+    background-color: rgb(123, 123, 149);
+    color: white;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.viewp{
+    min-height: 100vh;
+}
+.btn.btn1{
+    background: none;
+    color: rgb(33, 30, 30);
+    border: 1px solid rgb(153, 205, 238);
+   
+    border-radius: 15%;
+    width: fit-content;
+    box-shadow:2px 2px 4px rgb(41, 69, 86);
+
+
+}
+.btn.btn1:hover{
+    color: white;
+    text-transform: uppercase;
+}
+.slideshow{
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+    animation: slide  20s infinite ;
+}
+
+#card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+}
+#navbar{
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    width: 100vw;
+}
+#logo{
+    font-size:xx-large;
+}
+
+#p1{
+    font-size: large;
+}
+#p2{
+    font-size: larger;
+}
+#submit:hover{
+    color: rgb(44, 196, 234);
+    background-color: yellowgreen;
+}
+.nav-item:hover{
+    text-transform: uppercase;
+    color: aliceblue;
+    text-shadow: 2px 2px 4px white;
+    
+
+}
+nav ul li a.active {
+    color: red;
+}
+#signheader{
+    text-shadow: 2px 2px 3px #000000;
+}
+#getstarted{
+    text-shadow: 2px 2px 2px rgb(188, 125, 8);
+}
+#getstarted:hover{
+    box-shadow: 2px 2px 5px rgb(208, 139, 2);
+
+}
+#indexh1{
+    font-weight: bolder;
+    
+}
+#text{
+    text-shadow: 3px 2px 4px rgb(47, 47, 47);
+}
+#about div{
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 2%;
+    background-color: rgb(84, 106, 129);
+    box-shadow: 3px 3px 4px rgb(27, 36, 44);
+}
+#about_col1{
+    font-size: 100%;
+    color:rgb(255, 255, 255);
+    background-color: rgb(84, 106, 129);
+    height: 100vh;
+}
+#wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 3px 3px 4px rgb(35, 34, 34);
+}
+#wrapper > img{
+   z-index: -1;
+}
+#wrapper div{
+    position: absolute;
+    animation: animate 15s infinite;
+    opacity: 0;
+
+}
+#wrapper > div:nth-child(2){
+    animation-delay: 5s;
+}
+#wrapper > div:nth-child(3){
+    animation-delay: 10s;
+}
+@keyframes animate{
+    0% {
+        opacity: 0;
+        transform: translateX(0%);
+      }
+      20% {
+        opacity: 1;
+        transform: translateX(0%);
+      }
+      33.33% {
+        opacity: 1;
+        transform: translateX(-100%);
+      }
+      53.33% {
+        opacity: 1;
+        transform: translateX(-100%);
+      }
+      66.66% {
+        opacity: 1;
+        transform: translateX(-200%);
+      }
+      86.66% {
+        opacity: 1;
+        transform: translateX(-200%);
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(-200%);
+      }
+    }
+#btncollection{
+    position: static;
+    top: 50px;
+    z-index: 1;
+    border-bottom: 2px gray;
+}
+#trendsh1{
+    color: rgb(0, 81, 89);
+    text-shadow:2px 2px 3px #020200;
+}
+#slideshow{
+    padding-right: 5px;
+    box-shadow: 3px 3px 4px black;
+}
+.card{
+    box-shadow: 5px 3px 5px black;
+}
+#forecast{
+    background-color: rgb(178, 224, 236);
+    border: 0px;
+    padding: 5px;
+    margin: 2px;
+    margin-top: 8px;
+    border-radius: 20%;
+    border:1.5px solid rgb(183, 201, 206);
+}
+#forecast:hover{
+    background-color: rgb(42, 220, 255);
+    transition: 1s;
+    border:1.5 solid rgb(178, 224, 236);
+    box-shadow: 2px 2px 3px rgb(46, 56, 58);
+}
+#dashboardh1{
+    padding-top: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(111, 243, 252);
+    text-shadow: 2px 2px 2px rgb(3, 148, 156);
+    background-color: rgb(44, 44, 72);
+    height: 100px;
+}
+#dashboardH{
+    padding-top: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(3, 190, 203);
+    text-shadow: 1px 1px 2px rgb(6, 224, 235);
+    background-color: rgb(44, 44, 72);
+    height: 100px;
+}
+
+#dashboardh4{
+    color: rgb(235, 0, 0);
+    text-shadow:1px 1px 2px rgb(241, 241, 243);
+}
+#about {
+    font-size: 12px;
+}
+#foremsg{
+    width: 100vw;
+}
+table {
+    width: 100%;
+    box-shadow: 2px 2px 3px black;
+    border-radius: 2px;
+}
+tr:nth-child(even){
+    background-color: #e5e5e5;
+}
+tr:nth-child(odd){
+    background-color: #c6c5c5;
+}
+#recoh1{
+    height: 100px;
+    background-color: rgb(68, 85, 122);
+}
+#recomHd{
+    height: 90px;
+    background-color: rgb(68, 85, 122);
+    text-align: center;
+
+}
+#mktpics{
+    min-height: 350px;
+
+}
+.card img{
+    background-size: cover;
+    background-position: center;
+}
+#hd{
+    color: rgb(44, 44, 72);
+}
+#hdm{
+    color: 2px 2px 2px rgb(1, 104, 109);
+    text-shadow: 2px 2px 2px rgb(5, 187, 197);
+}
+
+#greytxt{
+    color: rgb(220, 220, 220);
+    font-family: monospace;
+    font-style: italic;
+}
+#greytxt:hover{
+    
+    color: 2px 2px 2px rgb(1, 104, 109);
+    text-shadow: 2px 2px 2px rgb(5, 187, 197);
+    
+    font-stretch: expanded;
+    
+}
+#feeds{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+/* slide show for graphs */
+#graphWrapper{
+  
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 3px 3px 4px rgb(35, 34, 34);
+}
+#graphWrapper canvas{
+    position: absolute;
+    animation: slide 20s infinite;
+    opacity: 0;
+}
+#graphWrapper > canvas:nth-child(2){
+    animation-delay: 5s;
+}
+#graphWrapper > canvas:nth-child(3){
+    animation-delay: 10s;
+}
+#graphWrapper > canvas:nth-child(4){
+    animation-delay: 15s;
+}
+@keyframes slide{
+    0% {
+        opacity: 0;
+        transform: translateX(0%);
+      }
+      20% {
+        opacity: 1;
+        transform: translateX(0%);
+      }
+      
+      53.33% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+     
+      86.66% {
+        opacity: 0;
+        transform: translateX(-200%);
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(-200%);
+      }
+    }
+.table_cell{
+    color: rgb(44, 44, 72);
+}
